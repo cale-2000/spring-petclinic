@@ -119,7 +119,7 @@
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
-                    <artifactId>*</artifactId>
+                    <artifactId>spring-data-jdbc-core</artifactId>
                 </exclusion>
                 <!--  because Spring Data usually comes with a slightly older version of Spring -->
             </exclusions>
