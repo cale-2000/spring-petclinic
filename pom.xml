@@ -380,7 +380,7 @@
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
-                <artifactId>maven-cobertura-plugin</artifactId>
+                <artifactId>cobertura-maven-plugin</artifactId>
                 <version>${cobertura.version}</version>
                 <configuration>
                     <check/>
@@ -407,7 +407,7 @@
             <!--  integrate maven-cobertura-plugin to project site  -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
-                <artifactId>maven-cobertura-plugin</artifactId>
+                <artifactId>cobertura-maven-plugin</artifactId>
                 <version>${cobertura.version}</version>
                 <configuration>
                     <formats>
