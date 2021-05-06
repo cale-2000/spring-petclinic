@@ -42,8 +42,7 @@
         <dandelion.version>1.1.1</dandelion.version>
         <dandelion.datatables.version>1.1.0</dandelion.datatables.version>
 
-        <!--cobertura.version>2.7</cobertura.version-->
-        <jacoco.version>0.8.1</jacoco.version>
+        <cobertura.version>2.7</cobertura.version>
 
     </properties>
 
@@ -379,7 +378,7 @@
                     <path>/petclinic</path>
                 </configuration>
             </plugin>
-            <!--plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>${cobertura.version}</version>
@@ -391,25 +390,6 @@
                         <goals>
                             <goal>clean</goal>
                             <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin-->
-              <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>report</goal>
                         </goals>
                     </execution>
                 </executions>
